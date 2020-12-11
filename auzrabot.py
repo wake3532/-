@@ -25,3 +25,6 @@ async def on_message(message):
         sslghm = "%.2f" % (24.34 * float(won) / 100.0)
         gap = float(won)+float(sslghm)
         await message.channel.send(f" 이더 가격 : **{gap} 원** \n\n 계산한 가격  : **{won} 원**")
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
